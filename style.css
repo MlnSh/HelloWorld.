@@ -56,12 +56,12 @@ body {
   color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 600;
-  line-height: 141.69%;
   letter-spacing: 0%;
   text-align: center;
   width: 247px;
   height: 66px;
   margin-top: 64px;
+  padding-top: 16px;
 }
 
 .star_1 {
@@ -110,23 +110,23 @@ body {
   background: rgb(32, 32, 39);
 }
 .section__title {
-    color: rgb(255, 255, 255);
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 78px;
-    letter-spacing: 0px;
-    text-align: left;
-    padding-top: 94px;
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 94px;
 }
 .section__text {
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-align: left;
-    width: 788px;
-    padding-top: 24px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 788px;
+  padding-top: 24px;
 }
 .section__items {
   display: grid;
@@ -209,7 +209,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .top__title {
+              .top__title {
     color: rgb(32, 32, 39);
     font-size: 40px;
     font-weight: 700;
