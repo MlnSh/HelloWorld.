@@ -114,6 +114,9 @@ body {
         text-align: left;
         padding-top: 94px;
     }
+    &__title-mob {
+        display: none;
+    }
     &__text {
         color: rgb(255, 255, 255);
         font-size: 24px;
@@ -168,6 +171,9 @@ body {
         padding-top: 8px;
         padding-bottom: 10px;
     }
+    &__text-mob {
+        display: none;
+    }
     &__name {
         color: rgb(32, 32, 39);
         font-size: 32px;
@@ -177,6 +183,12 @@ body {
         text-align: left;
         margin-top: 16px;
         color: rgb(32, 32, 39);
+    }
+    &__name-mob {
+        display: none;
+    }
+    &__image-mob {
+        display: none;
     }
     
     }
@@ -208,14 +220,106 @@ body {
     }    
 
     @media (max-width: 768px) {
-        .top {
-            &__title {
-        color: rgb(32, 32, 39);
+        .top {
+            height: 700px;
+            &__title {
+                color: rgb(32, 32, 39);
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 49px;
+                letter-spacing: 0px;
+                text-align: center;
+                width: 262px;
+            }
+            &__text {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0px;
+                text-align: center;
+                width: 296px;
+                color: rgb(32, 32, 39);
+            }
+            &__button {
+                font-size: 16px;
+                width: 285px;
+                height: 55px;
+            }
+            &__content {
+                align-content: center;
+            }  
+        }
+.star_3, .star_4, .star_5, .star_6 {
+    display: none;
+}
+.section {
+    &__content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    &__items {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 48px;
+    }
+    &__title {
+        display: none;
+    }
+    &__title-mob {
+        display: block;
+        color: rgb(255, 255, 255);
         font-size: 40px;
         font-weight: 700;
         line-height: 49px;
         letter-spacing: 0px;
+        text-align: left;
+        padding-top: 48px;
+    }
+    &__text {
+        display: none;
+    }
+}
+.item {
+    margin-bottom: 24px;
+    height: auto;
+    &__image {
+        display: none;
+    }
+    &__image-mob {
+        display: block;
+    }
+    &__text {
+        display: none;
+    }
+    &__text-mob {
+        display: block;
+        padding-top: 16px;
+    }
+    &__btn-mob {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0%;
         text-align: center;
-    }  
+        box-sizing: border-box;
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        border: 1px solid rgb(32, 32, 39);
+        font-family: Montserrat;
+        margin-top: 32px;
+        width: 285px;
+        height: 55px;
+        }
+        &__name-sp {
+            display: none;
+        }
+        &__name-mob {
+            display: block;
+            color: rgb(32, 32, 39);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
 }
 }
