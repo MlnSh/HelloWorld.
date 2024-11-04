@@ -221,6 +221,9 @@ body {
 
 @media (max-width: 768px) {
   .top {
+    background-image: url(images/Star2.svg), url(images/Star3.svg), url(images/Star4.svg), url(images/Star5.svg), url(images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 37px 97px, 91px 64px, 303px 580px, 273px 557px, 187px -103px;
     height: 700px;
   }
   .top__title {
@@ -231,6 +234,7 @@ body {
     letter-spacing: 0px;
     text-align: center;
     width: 262px;
+    padding-top: 147px;
   }
   .top__text {
     font-size: 16px;
@@ -245,11 +249,12 @@ body {
     font-size: 16px;
     width: 285px;
     height: 55px;
+    margin-top: 36px;
   }
   .top__content {
     align-content: center;
   }
-  .star_3, .star_4, .star_5, .star_6 {
+  .star_3, .star_4, .star_5, .star_6, .star_1, .star_2 {
     display: none;
   }
   .section__content {
@@ -319,5 +324,8 @@ body {
     line-height: 39px;
     letter-spacing: 0px;
     text-align: left;
+  }
+  .item-5 {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=style.css.map */
