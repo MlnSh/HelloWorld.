@@ -33,9 +33,9 @@ let age = prompt("Сколько вам лет?")
 alert(age);
 
 const user = {
-    name: Mark,
+    name: 'Mark',
     age: 21,
-    'isAdmin': true
+    isAdmin: true
 }
 let userName = prompt("Ваше имя")
 alert('Привет' +', '+ userName)
