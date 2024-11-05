@@ -289,10 +289,7 @@ body {
     height: auto;
   }
   .item__image {
-    display: none;
-  }
-  .item__image-mob {
-    display: block;
+    width: 100%;
   }
   .item__text {
     display: none;
@@ -300,6 +297,7 @@ body {
   .item__text-mob {
     display: block;
     padding-top: 16px;
+    color: rgb(0, 0, 0);
   }
   .item__btn-mob {
     display: block;

@@ -33,7 +33,7 @@ let age = prompt("Сколько вам лет?")
 alert(age);
 
 const user = {
-    name: 'Mark',
+    name: Mark,
     age: 21,
     'isAdmin': true
 }

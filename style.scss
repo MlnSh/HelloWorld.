@@ -290,17 +290,16 @@ body {
     margin-bottom: 24px;
     height: auto;
     &__image {
-        display: none;
+        width: 100%;
     }
-    &__image-mob {
-        display: block;
-    }
+    
     &__text {
         display: none;
     }
     &__text-mob {
         display: block;
         padding-top: 16px;
+        color: rgb(0, 0, 0);
     }
     &__btn-mob {
         display: block;
