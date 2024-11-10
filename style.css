@@ -141,6 +141,12 @@ body {
   padding-bottom: 50px;
   position: relative;
 }
+.section__items-big {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 32px;
+  margin-top: 72px;
+}
 
 .star_6 {
   position: absolute;
@@ -206,6 +212,52 @@ body {
 
 .name-short {
   width: 300px;
+}
+
+.item-big {
+  grid-column: span 12;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+}
+.item-big__content {
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+}
+.item-big__name {
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.item-big__text {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+}
+.item-big__button {
+  margin-top: 36px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  font-family: Montserrat;
+  width: 247px;
+  height: 66px;
 }
 
 .footer {
