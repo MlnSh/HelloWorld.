@@ -103,7 +103,7 @@ body {
     left: 0;
     }
     
-.section {
+.section-1 {
     background: rgb(32, 32, 39);
     background-image: url(images/Star1.svg), url(images/Star11.svg), url(images/Star12.svg);
     background-repeat: no-repeat;
@@ -147,15 +147,52 @@ body {
         margin-top: 72px;
     }
     
+}
+.section-2 {
+    background: rgb(32, 32, 39);
+    background-image: url(images/Star7.svg), url(images/Star6.svg), url(images/Star10.svg), url(images/Star8.svg);
+    background-repeat: no-repeat;
+    background-position: 1277px 93px, 1320px 126px, 1249px 3414px, 1319px 3366px;
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 94px;
     }
-      
-.star-6 {
-    position: absolute;
-    top: 77px;
-    left: 933px;
-    z-index: 0;
+    &__title-mob {
+        display: none;
     }
-    
+    &__text {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 788px;
+        padding-top: 24px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin-top: 72px;
+        column-gap: 32px;
+    }
+    &__content {
+        padding-bottom: 144px;
+
+    }
+    &__items-big {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        row-gap: 32px;
+        margin-top: 72px;
+    }
+}      
+
 .item {
     grid-column: span 4;
     height: 512px;
@@ -341,6 +378,7 @@ body {
         display: none;
     }
 }
+
 .item {
     margin-bottom: 24px;
     height: auto;
