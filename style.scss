@@ -92,7 +92,7 @@ body {
     }
     
 .roll {
-    background-image: url(images/Frame\ 2043683043.jpeg);
+    background-image: url(images/Frame\ 2043683043.svg);
     width: 100%;
     height: 49px;
     background-size: cover;
@@ -105,6 +105,9 @@ body {
     
 .section {
     background: rgb(32, 32, 39);
+    background-image: url(images/Star1.svg), url(images/Star11.svg), url(images/Star12.svg);
+    background-repeat: no-repeat;
+    background-position: 930px 77px, 25px 770px, 40px 822px;
     &__title {
         color: rgb(255, 255, 255);
         font-size: 64px;
@@ -135,7 +138,7 @@ body {
     }
     &__content {
         padding-bottom: 50px;
-        position: relative;
+
     }
     &__items-big {
         display: grid;
@@ -145,7 +148,7 @@ body {
     }
     
     }
-    
+      
 .star_6 {
     position: absolute;
     top: 77px;
@@ -214,7 +217,6 @@ body {
         width: 300px;
     
     }
-
 .item-big {
     grid-column: span 12;
     height: 500px;

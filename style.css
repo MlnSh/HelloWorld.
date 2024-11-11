@@ -94,7 +94,7 @@ body {
 }
 
 .roll {
-  background-image: url(images/Frame\ 2043683043.jpeg);
+  background-image: url(images/Frame\ 2043683043.svg);
   width: 100%;
   height: 49px;
   background-size: cover;
@@ -107,6 +107,9 @@ body {
 
 .section {
   background: rgb(32, 32, 39);
+  background-image: url(images/Star1.svg), url(images/Star11.svg), url(images/Star12.svg);
+  background-repeat: no-repeat;
+  background-position: 930px 77px, 25px 770px, 40px 822px;
 }
 .section__title {
   color: rgb(255, 255, 255);
@@ -139,7 +142,6 @@ body {
 }
 .section__content {
   padding-bottom: 50px;
-  position: relative;
 }
 .section__items-big {
   display: grid;
