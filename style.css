@@ -63,38 +63,38 @@ body {
   padding-top: 16px;
 }
 
-.star_1 {
+.star-1 {
   position: absolute;
   top: 69px;
   left: 156px;
 }
 
-.star_2 {
+.star-2 {
   position: absolute;
   top: 94px;
   left: 63px;
 }
 
-.star_3 {
+.star-3 {
   position: absolute;
   left: 854px;
   top: -333px;
 }
 
-.star_4 {
+.star-4 {
   position: absolute;
   bottom: 225px;
   right: 455px;
 }
 
-.star_5 {
+.star-5 {
   position: absolute;
   bottom: 149px;
   right: 344px;
 }
 
 .roll {
-  background-image: url(images/Frame\ 2043683043.jpeg);
+  background-image: url(images/Frame\ 2043683043.svg);
   width: 100%;
   height: 49px;
   background-size: cover;
@@ -105,10 +105,13 @@ body {
   left: 0;
 }
 
-.section {
+.section-1 {
   background: rgb(32, 32, 39);
+  background-image: url(images/Star1.svg), url(images/Star11.svg), url(images/Star12.svg);
+  background-repeat: no-repeat;
+  background-position: 930px 77px, 25px 770px, 40px 822px;
 }
-.section__title {
+.section-1__title {
   color: rgb(255, 255, 255);
   font-size: 64px;
   font-weight: 700;
@@ -117,10 +120,10 @@ body {
   text-align: left;
   padding-top: 94px;
 }
-.section__title-mob {
+.section-1__title-mob {
   display: none;
 }
-.section__text {
+.section-1__text {
   color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 400;
@@ -130,23 +133,66 @@ body {
   width: 788px;
   padding-top: 24px;
 }
-.section__items {
+.section-1__items {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-top: 72px;
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
-.section__content {
+.section-1__content {
   padding-bottom: 50px;
-  position: relative;
+}
+.section-1__items-big {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 32px;
+  margin-top: 72px;
 }
 
-.star_6 {
-  position: absolute;
-  top: 77px;
-  left: 933px;
-  z-index: 0;
+.section-2 {
+  background: rgb(32, 32, 39);
+  background-image: url(images/Star7.svg), url(images/Star6.svg), url(images/Star10.svg), url(images/Star8.svg);
+  background-repeat: no-repeat;
+  background-position: 1277px 93px, 1320px 126px, 1249px 3414px, 1319px 3366px;
+}
+.section-2__title {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 94px;
+}
+.section-2__title-mob {
+  display: none;
+}
+.section-2__text {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 788px;
+  padding-top: 24px;
+}
+.section-2__items {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 72px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.section-2__content {
+  padding-bottom: 144px;
+}
+.section-2__items-big {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 32px;
+  margin-top: 72px;
 }
 
 .item {
@@ -208,6 +254,52 @@ body {
   width: 300px;
 }
 
+.item-big {
+  grid-column: span 12;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+}
+.item-big__content {
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+}
+.item-big__name {
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.item-big__text {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+}
+.item-big__button {
+  margin-top: 36px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  font-family: Montserrat;
+  width: 247px;
+  height: 66px;
+}
+
 .footer {
   background: rgb(189, 237, 53);
   height: 150px;
@@ -257,21 +349,21 @@ body {
   .top__content {
     align-content: center;
   }
-  .star_3, .star_4, .star_5, .star_6, .star_1, .star_2 {
+  .star-3, .star-4, .star-5, .star-1, .star-2 {
     display: none;
   }
-  .section__content {
+  .section-1__content {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .section__items {
+  .section-1__items {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 48px;
   }
-  .section__title {
+  .section-1__title {
     display: none;
   }
-  .section__title-mob {
+  .section-1__title-mob {
     display: block;
     color: rgb(255, 255, 255);
     font-size: 40px;
@@ -281,7 +373,7 @@ body {
     text-align: left;
     padding-top: 48px;
   }
-  .section__text {
+  .section-1__text {
     display: none;
   }
   .item {
