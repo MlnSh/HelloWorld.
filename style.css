@@ -349,21 +349,21 @@ body {
   .top__content {
     align-content: center;
   }
-  .star_3, .star_4, .star_5, .star_6, .star_1, .star_2 {
+  .star-3, .star-4, .star-5, .star-1, .star-2 {
     display: none;
   }
-  .section__content {
+  .section-1__content {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .section__items {
+  .section-1__items {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 48px;
   }
-  .section__title {
+  .section-1__title {
     display: none;
   }
-  .section__title-mob {
+  .section-1__title-mob {
     display: block;
     color: rgb(255, 255, 255);
     font-size: 40px;
@@ -373,7 +373,7 @@ body {
     text-align: left;
     padding-top: 48px;
   }
-  .section__text {
+  .section-1__text {
     display: none;
   }
   .item {
