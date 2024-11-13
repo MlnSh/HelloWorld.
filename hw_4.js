@@ -16,10 +16,18 @@ const obj = {
 for (let key in obj) {
     console.log(`${key}: ${obj[key]}`)
 }
-
 let n = 1000;
-let f = (n / 2);
-while (f >= 50) {
-    n / 2;
-console.log(f)
+let num = 0;
+while (n >= 50) {
+    n /= 2;
+    num++;
 }
+console.log(n);
+console.log(num);
+
+
+let p = 5;
+do {
+    console.log('Сегодня пятница, ' + p +'-е число. Необходимо подготовить отчет.');
+    p += 7;
+} while (p <= 31);
