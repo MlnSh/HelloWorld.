@@ -25,3 +25,15 @@ function smallerNumber(a, b) {
     }
 }
 console.log(smallerNumber(6, 9))
+
+
+function evenNumber(a) {
+    if (a % 2 == 0) {
+        console.log('число четное');
+    }
+    else {
+        console.log('число нечетное')
+    }
+}
+
+console.log(evenNumber(7))
