@@ -47,3 +47,16 @@ console.log(squareNumber(54))
 let sqNum = (a) => {
     return a * a;
 }
+
+function howOld() {
+    let age = prompt('введите ваш возраст');
+    if (age <= 0) {
+        alert('Вы ввели неправильное значение');
+    }
+    else if (age > 0 && age <=12) {
+        alert('Привет, друг!');
+    }
+    else {
+        alert('Добро пожаловать');
+    }
+}
