@@ -37,3 +37,13 @@ function evenNumber(a) {
 }
 
 console.log(evenNumber(7))
+
+let squareNumber = (a) => {
+    let result = (a * a);
+    console.log(result);
+}
+console.log(squareNumber(54))
+
+let sqNum = (a) => {
+    return a * a;
+}
