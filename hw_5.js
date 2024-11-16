@@ -11,3 +11,17 @@ function game_1() {
     }
     else alert('поздравляю, угадал')
 }
+
+
+function smallerNumber(a, b) {
+    if (a > b) {
+        return b;
+    }
+    else if (a < b) {
+        return b;
+    }
+    else {
+        return a
+    }
+}
+console.log(smallerNumber(6, 9))
