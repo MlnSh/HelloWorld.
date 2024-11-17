@@ -60,3 +60,46 @@ function howOld() {
         alert('Добро пожаловать');
     }
 }
+
+
+// Задание 5
+// function isNan(a, b) {
+//     if (isNaN(a) || isNaN(b)) {
+//         console.log('Одно или оба значения не являются числом');
+//     }
+//     else {
+//         console.log(a * b)
+//     }
+// }
+
+let userNum = prompt('введите число');
+
+function checkNum(num) {
+    num = Number(num)
+    if (isNaN(num)) {
+        return('Переданный параметр не является числом');
+    }
+    else {
+        return(`${num} в кубе равняется ${num * num * num}`)
+    }
+}
+
+const circle1 = {
+    radius: 12,
+    getArea() {
+        return(3.14 * (this.radius * this.radius));
+    },
+    getPerimeter() {
+        return(2 * this.radius * 3.14);
+    }
+}
+
+const circle2 = {
+    radius: 2,
+    getArea() {
+        return(3.14 * (this.radius * this.radius));
+    },
+    getPerimeter() {
+        return(2 * this.radius * 3.14);
+    }
+}
