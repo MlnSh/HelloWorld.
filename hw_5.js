@@ -82,22 +82,22 @@ function checkNum(num) {
     }
 }
 
+
+function getArea() {
+    return(Math.PI * this.radius * this.radius);
+}
+function getPerimeter() {
+    return(2 * this.radius * Math.PI);
+}
+
 const circle1 = {
     radius: 12,
-    getArea() {
-        return(3.14 * (this.radius * this.radius));
-    },
-    getPerimeter() {
-        return(2 * this.radius * 3.14);
-    }
-}
+    getArea,
+    getPerimeter, 
+};
 
 const circle2 = {
     radius: 2,
-    getArea() {
-        return(3.14 * (this.radius * this.radius));
-    },
-    getPerimeter() {
-        return(2 * this.radius * 3.14);
-    }
-}
+    getArea,
+    getPerimeter,
+};
