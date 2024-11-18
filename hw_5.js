@@ -1,5 +1,6 @@
-let num = 87;
+const num = Math.floor(Math.random() * 100) + 1;
 function game_1() {
+    // const num = Math.floor(Math.random() * 100) + 1;
     let userTry = Number(prompt('угадай число от 1 до 100'));
     if (userTry < num) {
         alert('не угадал, загаданное число больше');
@@ -15,9 +16,6 @@ function game_1() {
 
 function smallerNumber(a, b) {
     if (a > b) {
-        return b;
-    }
-    else if (a < b) {
         return b;
     }
     else {
@@ -63,19 +61,19 @@ function howOld() {
 
 
 // Задание 5
-// function isNan(a, b) {
-//     if (isNaN(a) || isNaN(b)) {
-//         console.log('Одно или оба значения не являются числом');
-//     }
-//     else {
-//         console.log(a * b)
-//     }
-// }
+function isNan(a, b) {
+    if (isNaN(a) || isNaN(b)) {
+        return('Одно или оба значения не являются числом');
+    }
+    else {
+        return(a * b);
+    }
+}
 
-let userNum = prompt('введите число');
+
 
 function checkNum(num) {
-    num = Number(num)
+    const num = Number(prompt('введите число'));
     if (isNaN(num)) {
         return('Переданный параметр не является числом');
     }
