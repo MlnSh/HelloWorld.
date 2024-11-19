@@ -1,4 +1,4 @@
-const num = Math.floor(Math.random() * 100) + 1;
+const randomNum = Math.floor(Math.random() * 100) + 1;
 function game_1() {
     // const num = Math.floor(Math.random() * 100) + 1;
     let userTry = Number(prompt('угадай число от 1 до 100'));
@@ -72,7 +72,7 @@ function isNan(a, b) {
 
 
 
-function checkNum(num) {
+function checkNum() {
     const num = Number(prompt('введите число'));
     if (isNaN(num)) {
         return('Переданный параметр не является числом');
