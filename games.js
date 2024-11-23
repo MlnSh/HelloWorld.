@@ -25,8 +25,25 @@ function genTask() {
     const oper = operations[genRandomNum(0, operations.length - 1)];
     const randomNum_2 = genRandomNum(1, 100);
     let userAnswer = prompt(`Решите задачу: ${randomNum_1} ${oper} ${randomNum_2}`);
-    if (userAnswer != '${randomNum_1} ${oper} ${randomNum_2}' == false) {
-        alert('неверно'); }
-    else { alert('верно');
+    let correctAnswer;
+    switch (oper) {
+        case '+':
+            correctAnswer = randomNum_1 + randomNum_2;
+            break;
+        case '-':
+            correctAnswer = randomNum_1 - randomNum_2;
+            break;
+        case '*':
+            correctAnswer = randomNum_1 * randomNum_2;
+            break;
+        case '/':
+            correctAnswer = randomNum_1 / randomNum_2;
+            break;
+    }
+    if (Number(userAnswer) === correctAnswer) {
+        alert('Верно');
+    }
+    else {
+        alert('Неверно')
     }
 }
