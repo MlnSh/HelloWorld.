@@ -9,11 +9,8 @@ for (let i = 0; i < a.length; i++) {
 
 // задание 2
 b = [1, 5, 4, 10, 0, 3];
-for (let i = 0; i < b.length; i++) {
-    if (b[i] === 4) {
-        console.log(i);
-    }
-}
+
+console.log(b.indexOf(4));
 
 // задание 3
 c = [1, 3, 5, 10, 20];
@@ -64,8 +61,7 @@ console.log(hSplitReverse.join(''));
 
 // задание 9
 j = [[1, 2, 3],[4, 5, 6]];
-let jJoined = [...j[0] , ...j[1]];
-console.log(jJoined);
+console.log(j.flat());
 
 // задание 10
 // массив, придуманный мной
@@ -90,17 +86,24 @@ console.log(lSq);
 // задание 12
 // массив, придуманный мной
 m = ['fff', 'ee', 'aaaaa'];
-mLength = [];
-for (let i = 0; i < m.length; i++) {
+
+function strLength(m) {
+    let mLength = [];
+  for (let i = 0; i < m.length; i++) {
     mLength.push(m[i].length);
 }
-console.log(mLength);
+return(mLength);
+}
+console.log(strLength(m));
 
 // задание 13
 // массив, придуманный мной
 n = [8, 13, -13, 10, 77, -8, -77];
-nNegative = n.filter(num => num < 0);
-console.log(nNegative);
+function negative(n) {
+    let result = n.filter(num => num < 0);
+    return(result);
+}
+console.log(negative(n));
 
 // задание 14
 let arr = [];

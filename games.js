@@ -37,7 +37,7 @@ function genTask() {
             correctAnswer = randomNum_1 * randomNum_2;
             break;
         case '/':
-            correctAnswer = randomNum_1 / randomNum_2;
+            correctAnswer = (randomNum_1 / randomNum_2).toFixed(1);
             break;
     }
     if (Number(userAnswer) === correctAnswer) {
