@@ -54,3 +54,34 @@ function mirrorText() {
     let mirrorUserText = UserText.toLowerCase().split('').reverse().join('');
     alert(`Ваше слово наоборот: ${mirrorUserText}`);
 }
+
+// игра викторина
+function game_quiz() {
+    let correctAnswer = [];
+    const quiz = [
+        {
+            question: "Какого цвета небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2 // номер правильного ответа
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+    
+    for ( let i = 0; i < quiz.length; i++) {
+        let userAnswer = Number(prompt(`${quiz[i].question}\n${quiz[i].options.join('\n')}`));
+        if (quiz[i].correctAnswer === userAnswer) {
+            correctAnswer.push(1);
+        } else { continue
+        } 
+    }
+    alert(`Вы правильно ответили на ${correctAnswer.length} из ${quiz.length} вопросов!`);
+}
