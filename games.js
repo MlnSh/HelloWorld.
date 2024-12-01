@@ -47,3 +47,10 @@ function genTask() {
         alert('Неверно')
     }
 }
+
+// игра "переверни текст"
+function mirrorText() {
+    let UserText = prompt('Введите текст');
+    let mirrorUserText = UserText.toLowerCase().split('').reverse().join('');
+    alert(`Ваше слово наоборот: ${mirrorUserText}`);
+}
