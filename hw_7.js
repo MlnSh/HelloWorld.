@@ -35,7 +35,7 @@ function fromNumberToArray(num) {
 // задание 7
 function twoNumbers(num1, num2) {
     let newNum = Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
-    console.log(newNum);
+    return newNum;
 }
 
 // задание 8
