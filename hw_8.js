@@ -77,4 +77,4 @@ function sayHi (name) {
 // Код выше менять нельзя
 
 // Нужно изменить код ниже:
-delayForSecond(() => sayHi('Глеб'));
+delayForSecond(() => sayHi('Глеб'))
