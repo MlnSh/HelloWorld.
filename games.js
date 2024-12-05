@@ -85,3 +85,23 @@ function game_quiz() {
     }
     alert(`Вы правильно ответили на ${correctAnswer.length} из ${quiz.length} вопросов!`);
 }
+
+// игра камень, ножницы, бумага
+function rockPaperScissors() {
+    let UserChoice = prompt('выберите и введите "камень", "ножницы" или "бумага"');
+    let compChoiceIndex = () => Math.floor(Math.random() * 3);
+    const variableChoices = ["камень", "ножницы", "бумага"];
+    let compChoice = variableChoices[compChoiceIndex()];
+    if (UserChoice === compChoice) {
+        alert(`Вы выбрали ${UserChoice}, компьютер выбрал ${compChoice}, у вас ничья`)
+    } else if (
+        (UserChoice === "камень" && compChoice === "ножницы") ||
+        (UserChoice === "бумага" && compChoice === "камень") ||
+        (UserChoice === "ножницы" && compChoice === "бумага")
+    ) {
+            alert(`Вы выбрали ${UserChoice}, компьютер выбрал ${compChoice}, вы победили`);
+        } else {
+            alert(`Вы выбрали ${UserChoice}, компьютер выбрал ${compChoice}, победил компьютер`);
+        };
+    
+}
