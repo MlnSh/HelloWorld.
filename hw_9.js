@@ -2,7 +2,7 @@ const btnRemove = document.querySelector('.firstBtn');
 const titleEl = document.querySelector('.title');
 
 btnRemove.addEventListener('click', function (e) {
-    titleEl.classList.toggle('hidden'); 
+    titleEl.classList.toggle('title'); 
 });
 
 const btnColorChange = document.querySelector('.colorChange');
