@@ -61,6 +61,7 @@ body {
   height: 66px;
   margin-top: 64px;
   padding-top: 16px;
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
 }
 .top__button:hover {
   transition: background-color 0.5s;
@@ -220,6 +221,8 @@ body {
   height: 512px;
   border-radius: 30px;
   background-color: #fff;
+  transform: scale(1);
+  transition: 1s;
 }
 .item__btn-mob {
   display: none;
@@ -326,6 +329,7 @@ body {
   font-family: Montserrat;
   width: 247px;
   height: 66px;
+  transition: all 0.5s;
 }
 .item-big__button:hover {
   box-sizing: border-box;
@@ -383,7 +387,7 @@ body {
     margin-top: 36px;
   }
   .top__content {
-    align-content: center;
+    align-items: center;
   }
   .star-3, .star-4, .star-5, .star-1, .star-2 {
     display: none;
