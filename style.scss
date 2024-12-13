@@ -11,8 +11,8 @@ body {
     }
     
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
     }
     
 .top {
@@ -174,7 +174,7 @@ body {
     background: rgb(32, 32, 39);
     background-image: url(images/Star7.svg), url(images/Star6.svg), url(images/Star10.svg), url(images/Star8.svg);
     background-repeat: no-repeat;
-    background-position: 1277px 93px, 1320px 126px, 1249px 3414px, 1319px 3366px;
+    background-position: 1277px 93px, 1320px 126px, calc(100% - 139px) calc(100% - 41px), calc(100% - 69px) calc(100% - 69px);
     &__title {
         color: rgb(255, 255, 255);
         font-size: 64px;
@@ -410,6 +410,23 @@ body {
     .item-big {
         grid-column: span 8;
         height: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+        &__button {
+            font-size: 20px;
+            width: 200px;
+            height: 54px;
+            margin-top: 24px;
+
+        }
+        &__text {
+            font-size: 20px;
+            padding-top: 14px;
+        }
+        &__name {
+            font-size: 38px;
+            
+        }
         &__img {
             width: 50%;
 
