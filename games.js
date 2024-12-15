@@ -106,10 +106,12 @@ function rockPaperScissors() {
     
 }
 // игра рандомный цвет
+document.addEventListener('DOMContentLoaded', function() {
+    generateRandomColor();
+});
 function generateRandomColor() {
     const backgrounds = document.querySelectorAll('.section-1, .section-2'); 
     const changeColorButton = document.querySelector('.colorChangeButton');
-    // return randomColor;
     changeColorButton.addEventListener('click', function() {
         const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
         backgrounds.forEach(function(background) {
