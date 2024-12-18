@@ -1,6 +1,7 @@
 // игра 1
-const randomNum = Math.floor(Math.random() * 100) + 1;
+
 function game_1() {
+    const randomNum = Math.floor(Math.random() * 100) + 1;
     // const num = Math.floor(Math.random() * 100) + 1;
     let userTry = Number(prompt('угадай число от 1 до 100'));
     if (userTry < randomNum) {

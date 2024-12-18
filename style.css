@@ -339,6 +339,9 @@ body {
   color: rgb(32, 32, 39);
   transition: background-color 0.5s;
 }
+.item-big__img {
+  width: 50%;
+}
 
 .footer {
   background: rgb(189, 237, 53);

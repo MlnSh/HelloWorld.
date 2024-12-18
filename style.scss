@@ -338,6 +338,9 @@ body {
         color: rgb(32, 32, 39);
         transition: background-color 0.5s;
     }
+    &__img {
+        width: 50%;
+    }
 }
 
 .footer {
@@ -417,7 +420,6 @@ body {
             width: 200px;
             height: 54px;
             margin-top: 24px;
-
         }
         &__text {
             font-size: 20px;
